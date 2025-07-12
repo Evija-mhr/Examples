@@ -24,7 +24,7 @@ void push(link &q,int e)
 	p = new sq;
 	p->data = e;
 	p->next = NULL;
-	q.rear->next = p;
+	q.rear->next = p;  //注意q.front位置不存内容，在下一个节点开始存放一个数据
 	q.rear = p;
 	q.length++;
 }
